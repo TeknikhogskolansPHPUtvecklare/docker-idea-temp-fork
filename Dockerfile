@@ -14,4 +14,4 @@ CMD chmod -R 755  /storage/branches/country-info-main && \
   sed -i -e '$aListen '$PORT'' /etc/apache2/conf-available/docker-php.conf && \
   apache2-foreground
 
-ENTRYPOINT ["tail", "-f", "/dev/null"]
+#ENTRYPOINT ["tail", "-f", "/dev/null"]
