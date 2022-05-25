@@ -1,9 +1,5 @@
 [
-  "dev-frontend",
-  [
-    4001
-  ],
-  "main-frontend",
+  "country-info-main",
   [
     4000
   ]
