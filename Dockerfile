@@ -12,5 +12,7 @@ RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf
 ### The "apache2-foreground" command copied from the details about the docker image, specific tag "php:8.1-apache-buster"
 CMD chmod -R 755  /storage/branches/country-info-main && \
   sed -i '0,/Listen [0-9]*/s//Listen $PORT/' /etc/apache2/conf-available/*.conf && \
+  echo $PORT \
+  cat /etc/apache2/conf-available/*.conf && \
   apache2-foreground
 
